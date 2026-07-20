@@ -1,0 +1,14 @@
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/api/health
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/api/ask
+Content-Type: application/json
+
+{"query": "Что такое FastAPI?"}

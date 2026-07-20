@@ -1,0 +1,1 @@
+"""Perpetum search application."""

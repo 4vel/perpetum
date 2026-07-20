@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Perpetum — поиск с ответом</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main>
+    <header><div class="header-row"><a class="brand" href="/">Perpetum<span>●</span></a><button id="logout" type="button">Выйти</button></div><p>Ищет в Яндексе. Отвечает с ссылками</p></header>
+    <form id="search-form">
+      <textarea id="query" rows="1" maxlength="400" placeholder="Задайте любой вопрос…" required autofocus></textarea>
+      <button type="submit" aria-label="Искать">➜</button>
+    </form>
+    <div id="suggestions">
+      <button>Наушники до 20000 рублей</button>
+      <button>Подарок коллеге</button>
+      <button>Куда слетать на выходные из Москвы?</button>
+    </div>
+    <section id="result" hidden>
+      <div class="status" id="status"></div>
+      <h1 id="question"></h1>
+      <div class="sources" id="source-cards"></div>
+      <article id="answer"></article>
+      <h2 id="sources-title">Источники</h2>
+      <ol id="source-list"></ol>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
