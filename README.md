@@ -25,6 +25,14 @@ uvicorn main:app --reload
 docker compose up --build -d
 ```
 
+Если порт `8000` занят локальным Uvicorn, остановите его или выберите другой порт:
+
+```bash
+HOST_PORT=8001 docker compose up --build -d
+```
+
+Тогда интерфейс будет доступен по адресу http://127.0.0.1:8001.
+
 Проверка состояния и просмотр логов:
 
 ```bash
